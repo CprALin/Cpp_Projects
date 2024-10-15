@@ -3,11 +3,14 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: g++.exe build active file",
-            "command": "C:\\MinGW\\bin\\g++.exe",
+            "label": "C/C++: g++.exe",
+            "command": "cmake --build . --config Debug",
             "args": [
+                "-std=c++17",
+                "-stdlib=libc++",
                 "-fdiagnostics-color=always",
                 "-g",
+                "${workspaceFolder}/src/forma.cpp",
                 "${workspaceFolder}/src/main.cpp",   
                 "${workspaceFolder}/src/punct.cpp",
                 "-I${workspaceFolder}/include",      
