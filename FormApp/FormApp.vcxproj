@@ -127,10 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cerc.cpp" />
+    <ClCompile Include="forma.cpp" />
     <ClCompile Include="FormApp.cpp" />
     <ClCompile Include="punct.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cerc.h" />
+    <ClInclude Include="forma.h" />
     <ClInclude Include="punct.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
