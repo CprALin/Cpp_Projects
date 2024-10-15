@@ -1,15 +1,15 @@
-#include "../include/punct.h"
+#include "punct.h"
 #include <iostream>
 
 using namespace std;
 
 Punct A;
 Punct B(1);
-Punct C(2,3);
+Punct C(2, 3);
 Punct D = 1;
 Punct E = C;
 
-int main(){
+int main() {
 
     cout << A.getX() << " " << A.getY() << endl;
     cout << B.getX() << " " << B.getY() << endl;
