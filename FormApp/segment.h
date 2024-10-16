@@ -3,13 +3,12 @@
 #include "punct.h"
 
 class Segment {
-	Punct _B;
+	private:
+		Punct _B;
 
-public:
-	int getPunctB();
-	void setPunctB(Punct p);
-
-	Segment(Punct p = Punct(0, 0), Punct _B);
+	public:
+		Punct getPunctB();
+		void setPunctB(Punct p);
 };
 
 #endif

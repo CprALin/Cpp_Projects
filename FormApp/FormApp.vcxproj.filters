@@ -23,6 +23,15 @@
     <ClCompile Include="cerc.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="segment.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="triunghi.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="dreptunghi.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="punct.h">
@@ -32,6 +41,15 @@
       <Filter>includes</Filter>
     </ClInclude>
     <ClInclude Include="cerc.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="segment.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="triunghi.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="dreptunghi.h">
       <Filter>includes</Filter>
     </ClInclude>
   </ItemGroup>

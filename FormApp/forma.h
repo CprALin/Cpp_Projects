@@ -5,8 +5,8 @@
 class Forma {
 	Punct _locatie;
 public:
-	float getPerimetru();
-	float getArie();
+	virtual float getPerimetru();
+	virtual float getArie();
 	void setLocatie(Punct p);
 	Punct getLocatie();
 	Forma(Punct p = Punct(0, 0));

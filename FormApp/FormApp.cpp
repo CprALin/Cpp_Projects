@@ -1,6 +1,8 @@
 #include "punct.h"
 #include "forma.h"
 #include "cerc.h"
+#include "segment.h"
+#include "triunghi.h"
 #include <iostream>
 
 using namespace std;
@@ -17,6 +19,11 @@ Forma F2(C);
 Cerc C1;
 Cerc C2(C);
 Cerc C3(D, 3.14);
+
+Forma F(A);
+Triunghi T1;
+
+Forma* ptr;
 
 
 int main() {
@@ -40,6 +47,47 @@ int main() {
 
     cout << "C3:" << C3.getLocatie().getX() << " ";
     cout << C3.getLocatie().getY() << " " << C3.getRaza() << endl;
+
+    cout << "Perimetre:" << endl;
+    cout << "->F1:" << F1.getPerimetru() << endl;
+    cout << "->F2:" << F2.getPerimetru() << endl;
+    cout << "->C1:" << C1.getPerimetru() << endl;
+    cout << "->C2:" << C2.getPerimetru() << endl;
+    cout << "->C3:" << C3.getPerimetru() << endl;
+
+    cout << "Arii:" << endl;
+    cout << "->F1:" << F1.getArie() << endl;
+    cout << "->F2:" << F2.getArie() << endl;
+    cout << "->C1:" << C1.getArie() << endl;
+    cout << "->C2:" << C2.getArie() << endl;
+    cout << "->C3:" << C3.getArie() << endl;
+
+    ptr = &F;
+    cout << "Despre forma : " << endl;
+        cout << " Locatia : "<<ptr->getLocatie().getX() << " ";
+        cout << ptr->getLocatie().getY() << endl;
+    cout << "Perimetrul : " << ptr->getPerimetru() << endl;
+    cout << "Aria:" << ptr->getArie() << endl;
+
+    ptr = &C1;
+    cout << "Despre cerc : " << endl; 
+    cout << "Locatia : "<<ptr->getLocatie().getX() << " ";
+    cout << ptr->getLocatie().getY() << endl;
+    cout << "Perimetrul:" << ptr->getPerimetru() << endl;
+    cout << "Aria:" << ptr->getArie() << endl;
+
+    Forma* v[3];
+
+    v[0] = &C1;
+    v[1] = &C2;
+    v[2] = &C3;
+
+    /*
+    for (int i = 0; i < 3; i++)
+    {
+        cout << v[i]->getArie() << endl;
+    }
+    */ 
 
 
     return 0;

@@ -128,14 +128,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="cerc.cpp" />
+    <ClCompile Include="dreptunghi.cpp" />
     <ClCompile Include="forma.cpp" />
     <ClCompile Include="FormApp.cpp" />
     <ClCompile Include="punct.cpp" />
+    <ClCompile Include="segment.cpp" />
+    <ClCompile Include="triunghi.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cerc.h" />
+    <ClInclude Include="dreptunghi.h" />
     <ClInclude Include="forma.h" />
     <ClInclude Include="punct.h" />
+    <ClInclude Include="segment.h" />
+    <ClInclude Include="triunghi.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

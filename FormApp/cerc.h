@@ -7,6 +7,9 @@ class Cerc : public Forma {
 	float _raza;
 
 public:
+	float getPerimetru();
+	float getArie();
+
 	float getRaza();
 	void setRaza(float r);
 	Cerc(Punct p = Punct(0, 0), float r = 0);
